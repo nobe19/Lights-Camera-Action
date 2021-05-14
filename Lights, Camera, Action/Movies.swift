@@ -1,19 +1,25 @@
 //
-//  ShowFilms.swift
+//  Movies.swift
 //  Lights, Camera, Action
 //
-//  Created by Nipuni Obe on 5/14/21.
+//  Created by Nipuni Obe on 
 //
 
 import Foundation
 
-class ShowFilms {
+class Movies {
     
     struct Returned: Codable {
-        var id: Double
+       // var ID: Double or would it have been FIELD1
+        var movie: Movie
     }
     
-    //what would var be here since it is not a link (csv file converted to json in xcode, needs to be string)?
+    struct Movie: Codable {
+        var title: String
+    }
+
+    // var urlString = ... but what would var be here since it is not a link (csv file converted to json in xcode, needs to be string)?
+    var movieArray: [Returned] = []
     
     func getData(completed: @escaping () -> ()) {
         //        guard isFetching == false else {
@@ -42,15 +48,16 @@ class ShowFilms {
             
             //deal w/ data
             do {
-                let returned = try JSONDecoder().decode([Returned].self, from: data!)
+                self.movieArray = try JSONDecoder().decode([Returned].self, from: data!)
+                print("😎 Here is what we returned \(returned)")
                 self.count = returned.count
                 self.urlString = returned.next ?? ""
-                self.creatureArray = returned.results
-                //print("😎 Here is what was returned: \(returned)")
+                 = returned.results
+                //print("😎 Here is what was returned: \(self.movieArray)")
             } catch {
                 print("😡 JSON ERROR: \(error.localizedDescription)")
             }
-            self.isFetching = false
+//            self.isFetching = false
             completed()
         }
         task.resume()

@@ -14,7 +14,7 @@
 		75BFDCD9264D9111001B1617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75BFDCD8264D9111001B1617 /* Assets.xcassets */; };
 		75BFDCDC264D9111001B1617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BFDCDA264D9111001B1617 /* LaunchScreen.storyboard */; };
 		75BFDD48264E69FF001B1617 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFDD47264E69FF001B1617 /* DetailViewController.swift */; };
-		75BFDD4F264E6FCA001B1617 /* ShowFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFDD4E264E6FCA001B1617 /* ShowFilms.swift */; };
+		75BFDD54264EE57B001B1617 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFDD53264EE57B001B1617 /* Movies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		75BFDCDB264D9111001B1617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75BFDCDD264D9111001B1617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75BFDD47264E69FF001B1617 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		75BFDD4E264E6FCA001B1617 /* ShowFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFilms.swift; sourceTree = "<group>"; };
+		75BFDD53264EE57B001B1617 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			children = (
 				75BFDCCF264D9110001B1617 /* AppDelegate.swift */,
 				75BFDCD1264D9110001B1617 /* SceneDelegate.swift */,
-				75BFDD4E264E6FCA001B1617 /* ShowFilms.swift */,
+				75BFDD53264EE57B001B1617 /* Movies.swift */,
 				75BFDCD3264D9110001B1617 /* ListViewController.swift */,
 				75BFDD47264E69FF001B1617 /* DetailViewController.swift */,
 				75BFDCD5264D9110001B1617 /* Main.storyboard */,
@@ -143,8 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75BFDD4F264E6FCA001B1617 /* ShowFilms.swift in Sources */,
 				75BFDCD4264D9110001B1617 /* ListViewController.swift in Sources */,
+				75BFDD54264EE57B001B1617 /* Movies.swift in Sources */,
 				75BFDCD0264D9110001B1617 /* AppDelegate.swift in Sources */,
 				75BFDCD2264D9110001B1617 /* SceneDelegate.swift in Sources */,
 				75BFDD48264E69FF001B1617 /* DetailViewController.swift in Sources */,
